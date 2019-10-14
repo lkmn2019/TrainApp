@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".FAQsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:textSize="14sp"
+        android:text="Q: What is an IP camera system?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="A: An IP camera system consists of a number of network attached cameras, which are generally called IP cameras.  The system also includes some type of video recording system and a number of viewing workstations.  The video recording system can be either a computer running video management software (VMS, or a Network Video Recorder (NVR)."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="Q: How do you record the video from IP cameras systems?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="A: There are three types of recording systems: Video Management Software, Network Video Recorders (NVR), and Cloud service systems. Each one provides some unique capability.
+
+Video Management Software (VMS) is software only that runs on your Windows computer and can be scaled to any size of system.
+
+Network Video Recorder (NVR) is a complete system that includes the computer and software and is typically proprietary and not expandable.
+
+Cloud service provides remote recording (over the Internet) for IP cameras at many different locations."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="Q: What is a Video Server?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="A: The network video server is a computer that runs special Video Management Software (VMS) and is used to record video from IP cameras. A Windows computer is usually used as the platform for the VMS. Video is recorded onto the computer’s hard drives in a special video format. Learn more about Video Management Software.
+
+There has been some confusion with this term because a number of years ago a device that attached an analog camera to the network was also called a video or camera server. A video camera server, is now usually referred to as a Video Encoder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="Q: What is a Network Video Recorder (NVR)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="A: The Network Video Recorder (NVR) is a complete IP Camera recording device. It is similar to the Video Server system, but instead of using a standard Windows computer, it uses a dedicated special computer with an operating system and application software that is dedicated to recording the video. It also allows many people to view real time and recorded video. The term evolved from the older DVR (or Digital Video Recorder). The NVR includes both the computer and special Video Management Software (VMS). The computer usually uses Linux, but there are some that use Windows as well."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="Q: What is the Difference between a network video server and the Network Video Recorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="A: The Video Server is similar to the Network Video Recorder (NVR) in that they both record the video. The Network Video Recorder comes with the VMS software already installed, while the Video Server does not include the VMS software. You can select the VMS you like and then load it on the Video Server. The Video Server usually runs the Windows operating system and is more flexible than the NVR because it is easier to expand and add cameras. The NVR usually has a fixed limit to the number of cameras it will support."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="Q: What is a Digital Video Recorder (DVR)?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="A: The DVR is a device that records video from analog cameras to one or more hard drives. It is used in CCTV systems. The term DVR is also used by the consumer TV market. The DVR used in the security market has a fixed number of BNC connections to attach analog CCTV cameras. DVRs are available with 4, 8 16, 32 and 64 channels (or connections). This means that you have a maximum number of cameras that can be supported by one unit. Once you exceed the number of connections available on the DVR, you will need to add another DVR to your system. Some DVRs connect to the network and can be viewed using a Windows computer."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:text="Q: What is a CCTV System?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="A CCTV system is a Closed Circuit TV system. These are cameras that are available to a private group of people rather than provided to a very large number of people using a broadcast TV signal. It is the original term used for a camera surveillance system that was connected using analog coax wire. Today we use IP cameras instead."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        android:text="Q: What is an explosion-proof Camera?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start" />
+
+    <TextView
+        android:textAlignment="viewStart"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="A: An explosion-proof camera is one that can be used in a hazardous potentially explosive environment. This means that the camera system will not cause an explosion, rather than survive an explosion outside the enclosure. The cameras used in these environments are designed to prevent ignition of the surrounding gases or dust. They will either contain any explosion within the device or prevent sparks from exiting the device and triggering an explosion. To learn more, take a look at the article What is an Explosion-Proof Camera."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start" />
+
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/dd"
+    tools:context=".chating.RegisterActivity">
+    <LinearLayout
+        android:background="#40000000"
+        android:padding="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/log"
+        android:padding="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtLogin"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="MNVR LOGIN"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/txtLogin"
+        android:background="@drawable/bordar_no_bottom"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:paddingLeft="20dp"
+        android:id="@+id/et_name"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/white"
+        android:background="@drawable/bordar_no_bottom"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_name"
+        android:hint="Password"
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:background="@drawable/btn_log"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btn_nmvr_login"
+        android:layout_below="@+id/et_password"
+        android:text="LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

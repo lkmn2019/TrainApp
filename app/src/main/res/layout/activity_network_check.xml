@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NetworkCheckActivity">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="@drawable/back_11"
+        android:id="@+id/rlTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="15dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:id="@+id/tv1"
+            android:text="Network Heath Check: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:text="Chennai Express 12433"
+            android:layout_toRightOf="@id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tv1"
+            android:text="Coach: A1"
+            android:layout_toRightOf="@id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rlTop"
+        android:id="@+id/rlBottom"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <View
+            android:background="@color/colorPrimary"
+            android:layout_width="5dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+        <ListView
+            android:layout_marginLeft="3dp"
+            android:dividerHeight="0dp"
+            android:divider="@color/white"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lvNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

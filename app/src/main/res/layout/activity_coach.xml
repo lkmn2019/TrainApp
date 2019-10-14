@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoachActivity">
+    <!--<View
+        android:background="@color/light_black"
+        android:layout_width="1dp"
+        android:layout_height="match_parent">
+
+    </View>
+    <View
+        android:layout_alignParentRight="true"
+        android:background="@color/light_black"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true">
+
+    </View>
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>
+    <View
+        android:layout_alignParentTop="true"
+        android:background="@color/light_black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+    </View>-->
+    <LinearLayout
+        android:background="@drawable/back_11"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:hint="Train Name"
+            android:text="Chennai Express"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:hint="@string/train_no"
+            android:text="12022"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/ll_top"
+        android:gravity="center"
+        android:id="@+id/ll_mid"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:text="Coach Number"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="1dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content">
+
+        </View>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp"
+            android:text="Coach Type"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_alignParentTop="true"
+            android:background="@color/line"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content">
+
+        </View>
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Fare"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="5dp"
+        android:layout_height="match_parent">
+
+    </View>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ll_mid"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:dividerHeight="0dp"
+        android:divider="@color/white"
+        android:id="@+id/lv_coach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</RelativeLayout>

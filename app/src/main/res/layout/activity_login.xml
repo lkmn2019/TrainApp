@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/dd"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:background="#40000000"
+        android:padding="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:padding="30dp"
+            android:background="@drawable/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_face"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLogin"
+                android:src="@drawable/face" />
+            <TextView
+                android:textSize="14sp"
+                android:id="@+id/txtFace"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_face"
+                android:text="Face Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtOr"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtFace"
+                android:text="OR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:layout_below="@+id/txtOr"
+                android:id="@+id/et_username"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="14sp"
+                android:hint="Username"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bordar_no_bottom"
+                android:textColorHint="#B39DDB"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+            <EditText
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:layout_below="@+id/et_username"
+                android:id="@+id/et_password"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bordar_no_bottom"
+                android:hint="Password"
+                android:textColorHint="#B39DDB"
+                android:layout_width="match_parent"
+                android:layout_height="45dp" />
+            <Button
+                android:padding="5dp"
+                android:layout_below="@+id/et_password"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:id="@+id/login"
+                android:textSize="14sp"
+                android:background="@drawable/btn_log"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:text="Login"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtGenPass"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="Generate Password"
+                android:layout_below="@+id/login"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="5dp"
+        android:layout_height="match_parent">
+
+    </View>
+
+    <ListView
+        android:layout_marginLeft="4dp"
+        android:padding="2dp"
+        android:layout_below="@+id/ll_top"
+        android:dividerHeight="0dp"
+        android:divider="@color/white"
+        android:id="@+id/lvTrain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</RelativeLayout>
